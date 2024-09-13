@@ -13,6 +13,9 @@ In {product-title} (ROSA), changing aspects of your worker nodes is performed th
 ifdef::openshift-rosa-hcp[]
 For more information, see the link:https://docs.openshift.com/rosa/rosa_cluster_admin/rosa_nodes/rosa-nodes-machinepools-about.html[machine pool] documentation.
 endif::openshift-rosa-hcp[]
+ifdef::openshift-rosa[]
+For more information, see the xref:../../rosa_cluster_admin/rosa_nodes/rosa-nodes-machinepools-about.adoc#rosa-nodes-machinepools-about[machine pool] documentation.
+endif::openshift-rosa[]
 
 == Creating a machine pool
 You can create a machine pool with either the command line interface (CLI) or the user interface (UI). 
@@ -214,6 +217,9 @@ rosa create machinepool --cluster=my-rosa-cluster --name=db-nodes-large-mp --rep
 ifdef::openshift-rosa-hcp[]
 . To see all the link:https://docs.openshift.com/rosa/rosa_architecture/rosa_policy_service_definition/rosa-instance-types.html[instance types available], run the following command:
 endif::openshift-rosa-hcp[]
+ifdef::openshift-rosa[]
+. To see all the xref:../../rosa_architecture/rosa_policy_service_definition/rosa-service-definition.adoc#rosa-sdpolicy-aws-instance-types_rosa-service-definition[instance types available], run the following command:
+endif::openshift-rosa[]
 +
 [source,terminal]
 ----
