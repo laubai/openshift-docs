@@ -137,6 +137,28 @@ Topics:
     File: cloud-experts-deploying-application-prerequisites
   - Name: Lab Overview
     File: cloud-experts-deploying-application-lab-overview
+# ---
+# Name: Getting started
+# Dir: rosa_getting_started
+---
+Name: Prepare your environment
+Dir: rosa_planning
+Distros: openshift-rosa-hcp
+Topics:
+- Name: Prerequisites checklist for deploying ROSA using STS
+  File: rosa-cloud-expert-prereq-checklist
+- Name: Detailed requirements for deploying ROSA using STS
+  File: rosa-sts-aws-prereqs
+- Name: ROSA IAM role resources
+  File: rosa-sts-ocm-role
+- Name: Limits and scalability
+  File: rosa-limits-scalability
+- Name: Planning your environment
+  File: rosa-planning-environment
+- Name: Required AWS service quotas
+  File: rosa-sts-required-aws-service-quotas
+- Name: Setting up your environment
+  File: rosa-sts-setting-up-environment
 ---
 Name: Install ROSA with HCP clusters
 Dir: rosa_hcp
