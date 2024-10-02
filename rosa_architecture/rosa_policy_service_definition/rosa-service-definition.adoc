@@ -38,13 +38,10 @@ include::modules/rosa-sdpolicy-instance-types.adoc[leveloffset=+2]
 [role="_additional-resources"]
 .Additional resources
 
-For a detailed listing of supported instance types, see 
-ifdef::openshift-rosa-hcp[]
-link:https://docs.openshift.com/rosa/rosa_architecture/rosa_policy_service_definition/rosa-hcp-instance-types.html#rosa-hcp-instance-types[{product-title} instance types].
-endif::openshift-rosa-hcp[]
-ifndef::openshift-rosa-hcp[]
-xref:../rosa_policy_service_definition/rosa-instance-types.adoc#rosa-instance-types[{product-title} instance types].
-endif::openshift-rosa-hcp[]
+* xref:../rosa_policy_service_definition/rosa-instance-types.adoc#rosa-instance-types[{product-title} instance types]
+
+* xref:../../rosa_planning/rosa-limits-scalability.adoc#rosa-limits-scalability[Limits and scalability]
+
 
 include::modules/rosa-sdpolicy-am-regions-az.adoc[leveloffset=+2]
 
