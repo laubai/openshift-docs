@@ -4,7 +4,6 @@
 
 :_mod-docs-content-type: CONCEPT
 [id="multi-architecture-scheduling-examples_{context}"]
-
 = Sample multi-architecture node workload deployments
 
 Before you schedule workloads on a cluster with compute nodes of different architectures, consider the following use cases:
@@ -35,6 +34,8 @@ spec:
 ----
 <1> Specify the supported architectures. Valid values include `amd64`,`arm64`, or both values.
 
+//Omitting taint and toleration based examples from ROSA HCP docs
+ifndef::openshift-rosa-hcp[]
 Tainting every node for a specific architecture:: You can taint a node to avoid workloads that are not compatible with its architecture to be scheduled on that node. In the case where your cluster is using a `MachineSet` object, you can add parameters to the `.spec.template.spec.taints` field to avoid workloads being scheduled on nodes with non-supported architectures.
 
 * Before you can taint a node, you must scale down the `MachineSet` object or remove available machines. You can scale down the machine set by using one of following commands:
@@ -137,3 +138,4 @@ spec:
         operator: "Equal"
         effect: "NoSchedule"
 ----
+endif::openshift-rosa-hcp[]
